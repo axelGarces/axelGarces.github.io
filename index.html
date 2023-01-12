@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axel Garces Dev Portdolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8631ab46e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id = "header">
+    <div class="container" >
+        <nav>
+            <img src="images/logo4.png" class="logo">
+            <ul id="sidemenu"> 
+                <li><a href="#headere">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+                
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I am <span> Axel</span><br><i class="fa-solid fa-location-dot"></i> Colorado!</h1>
+        </div>
+    </div>
+</div>
+
+<!-- --------About------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/aboutme.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Hi there! My name is Axel Garces and I am an avid outdoors enthusiast who 
+                    loves nothing more than spending time in nature. When I'm not exploring 
+                    the great outdoors, you can find me snowboarding in the winter or playing 
+                    soccer in the summer. In addition to my love for physical activity, I also
+                     have a passion for programming and staying up to date on the latest technological
+                    advancements. I am always eager to learn new skills and take on new challenges, and 
+                    I believe that there is always more to discover and learn. Whether it's through
+                     programming or some other pursuit, I am constantly striving to improve and grow.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>I have a strong background in UI/UX design, with a keen eye for detail 
+                            and a passion for creating intuitive and user-friendly interfaces. </li>
+                        <li><span>Web Development</span><br>I am proficient in web development, with strong skills in HTML, 
+                            CSS, and JavaScript that allow me to build dynamic and responsive websites from scratch.</li>
+                        <li><span>App Development</span><br>I have a background in app development, using Xcode and Swift 
+                            to build IOS apps, and Flutter and Dart to build cross-platform apps for both IOS and Android.</li>
+                        <li><span>Data Structures</span><br>I have a strong foundation in data structures and algorithms, with
+                             experience implementing them in C++ to create efficient and effective solutions to complex problems.</li>
+                        <li><span>Programming Languages</span><br>I am proficient in a variety of programming languages, including C++, 
+                            C#, Python, Java, HTML, CSS, JavaScript, Swift, and Dart. </li>
+                        <li><span>Software & Tools</span><br> I am proficient in using a variety of software and tools, including Linux/Unix, 
+                            VSCode, Rider, Android Studio, Git, Savant Application Manager, Crestron Home, Eclipse, and Arduino. 
+                            These tools allow me to efficiently develop and deploy software and systems.</li>
+                        <li><span>Home Automation</span><br>I have experience working with home automation systems, including 
+                            Savant programming, Crestron Home programming, and Control 4 programming. I am skilled in using these 
+                            systems to create customized and user-friendly environments for homeowners.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>| 2021 - 2022 | </span><br>Software Team Apprentice - Paragon Systems Integrations.</li>
+                        <li><span>| 2020 - 2021 |</span><br> Install Technician - Paragon Systems Integrations. </li>
+                        <li><span>| 2018 - 2020 | </span><br>Low Voltage Infrastructure Lead - Paragon Systems Integrations. </li>
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>| 2020 - 2023 |</span><br> Expected Bachelor's degree in Computer Science from Colorado Mesa University.</li>
+                        <li><span>| 2018 - 2020 |</span><br>Associates of Science from Colorado Mountain College. </li>
+                        <li><span>| 2019 |</span><br>Level 1 Programer from Savant University.</li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------Services---------- -->
+<div id="services">
+    <div class="container">
+        <h1 class = "sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Development</h2>
+                <p>I offer web development services, including the creation and 
+                    customization of websites for individuals or businesses.</p>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>I offer UI/UX design services, including the design and 
+                    optimization of user interfaces and user experiences for 
+                    websites and software applications.</p>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Development</h2>
+                <p>I offer app development services, including the design, development, 
+                    and maintenance of mobile applications for IOS and Android.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-house-signal"></i>
+                <h2>Smart Home Automation</h2>
+                <p>I offer full smart home integration services, including the integration of 
+                    various smart home devices and systems into a cohesive, easy-to-use platform,
+                     allowing for the convenient control and automation of a home or building.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class = "sub-title">My Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src = "images/portfolio1.png">
+                <div class="layer">
+                    <h3>Star Laser Guide - Embedded App</h3>
+                    <p>We worked closely with a client to develop a project that could be used in schools. 
+                        Our team, which included computer scientists, designed and implemented a system that 
+                        allows users to point at a constellation in the sky and receive information about it. 
+                        To ensure the project's success, we enlisted the help of mechanical engineering students 
+                        from Colorado Mesa University and partnered with a 3D printing organization to create a 
+                        sophisticated and efficient design.</p>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src = "images/portfolio2.png">
+                <div class="layer">
+                    <h3>Colorado Mesa University Application</h3>
+                    <p>Collaborated with Colorado Mesa University school staff and advisors to redesign the
+                         application using Figma, and created a prototype in Xcode using Swift.</p>
+                    <a href="https://www.figma.com/proto/LzhSN63ftlOq2gp8gEYl2C/Student-Showcase?node-id=169%3A14&scaling=scale-down&page-id=0%3A1&starting-point-node-id=169%3A14"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src = "images/portfolio3.png">
+                <div class="layer">
+                    <h3>Geo Location App</h3>
+                    <p>I am currently engaged in the development of an iOS application utilizing 
+                        the Swift programming language and SQLite database. The app utilizes the 
+                        Apple Maps API to display nearby objects and determines the optimal route
+                         to them. The app will also utilize the SQLite database to store and retrieve 
+                         objects based on their location for seamless and efficient data management.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#"class = "btn">See more</a>
+    </div>
+</div>
+<!-- --------Contact------------ -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>Please utilize the provided form to request my email address.</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>Please utilize the provided form to request my phone number.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/axel-garces-1800ag/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/axelgarces69"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/webresume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Messsage"></textarea>
+                    <button type="submit" class="btn btn2" > Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Axel Garces <i class="fa-light fa-laptop-code"></i> Garces </p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");       
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+  
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzlTRiHc7mmX8svBkj1Enmke9yKKwGF4-tK_L88muIP-gH-WxsXG-TUmffR20Q0KzSIwQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function() {
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
